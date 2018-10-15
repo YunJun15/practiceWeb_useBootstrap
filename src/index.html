@@ -1,79 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Sweetaste</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../src/bootstrap-4.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style/style.sss">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row py-4 px-5">
-                <div class="col-8">
-                    <img src="../src/images/logo-all-dark.svg" class="w-25" alt="logo">
-                </div>
-                <nav class="col-4 navbar container">
-                    <a class="navbar-brand text-success font-weight-bold" href="#">首頁</a>
-                    <a class="navbar-brand text-success font-weight-bold" href="#">甜點</a>
-                    <a class="navbar-brand text-success font-weight-bold" href="#">登入</a>
-                    <a class="navbar-brand text-success font-weight-bold" href="#"><i class="fas fa-shopping-cart"></i></a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <section class="bg-dark">
-        <div class="container bg-primary py-2">
-            <div class="row bg-white rounded mx-2 my-3 border-secondary">
-                <div class="row  border rounded ml-3 mt-3 mr-0">
-                        <div class="col-6 rounded pb-1">
-                                <label for="account"></label>
-                                <input type="text" class="form-control" name="account" id="account" aria-describedby="helpId"
-                                    placeholder="帳號">
-                                    
-                            </div>
-                            
-                            <div class=" col-6  pl-0 pb-4">
-                                <label for="password"></label>
-                                <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId"
-                                    placeholder="登錄密碼">
-                            </div>
-                </div>
-               <div class="btn-inline-block">
-                    <button type="button" class="btn mt-4 h-50">GO</button>
-               </div>
-              
-               
-               <div class="container"></div>
-                    <div class="row col-2">
-                            <small id="helpId" class="form-text rounded bg-secondary pb-3 px-3 mb-2 mt-0 ml-3 text-center text-dark w-50">忘記密碼</small>
-                     </div>
-               </div>
+            <div class="row header-top"></div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container col-8">
+                    <a class="navbar-brand text-white font-weight-bold" href="#">Theory</a>
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Elements</a>
 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container my-5">
+                <div class="row justify-content-center header-title">
+                    <h1 class="mb-4  text-secondary">Welcome to Theory</h1>
+                    <div class="w-100"></div>
+                    <h5 class="font-weight-light text-secondary">A free responsive HTML5 website template by TEMPLATED.</h5>
+                </div>
+            </div>
+    </header>
+    <section>
+        <div class="container-fluid py-6">
+            <div class="row mx-7 external-link-container">
+                <div class="col-4 border-right pr-5">
+                    <h3 class="text-primary font-weight-normal mb-4">
+                        Magna tempus sed amet<br />
+                        aliquam veroeros</h2>
+                    <p class="mb-5">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper
+                        laoreet,
+                        lectus arcu.</p>
+                    <button type="button" name="more" id="more" class="btn btn-primary btn-lg text-white rounded-0">More</button>
+                </div>
+                <div class="col-4 border-right pr-5 pl-5">
+                    <h3 class="text-primary font-weight-normal mb-4">Interdum lorem pulvinar<br />
+                        adipiscing vitae</h2>
+                    <p class="mb-5">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper
+                        laoreet,
+                        lectus arcu.</p>
+                    <button type="button" name="more" id="more" class="btn btn-primary btn-lg text-white rounded-0">More</button>
+                </div>
+                <div class="col-4  pl-5">
+                    <h3 class="text-primary font-weight-normal mb-4">Libero purus magna sapien<br />
+                        sed ullamcorper</h2>
+                    <p class="mb-5">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper
+                        laoreet,
+                        lectus arcu.</p>
+                    <button type="button" name="more" id="more" class="btn btn-primary btn-lg text-white rounded-0">More</button>
+                </div>
             </div>
         </div>
     </section>
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
+    <section class="introduction">
+        <div class="container-fluid">
+            <div class="row mx-7">
+                <div class="col-3 text-center">
+                  <img src="../src/images/pexels-photo-1239291.jpeg" alt="person1" class="d--block w-25 mx-auto">
+                  <h3>Magna</h3>
+                  <p>Cipdum dolor</p>
+                </div>
+                <div class="col-3 text-center">
+                  <img src="../src/images/pexels-photo-220453.jpeg" alt="person2" class="d--block w-25 mx-auto">
+                  <h3>Ipsum</h3>
+                  <p>Vestibulum comm</p>      
+                </div>
+                <div class="col-3 text-center">
+                  <img src="../src/images/pexels-photo-253758.jpeg" alt="person3" class="d--block w-25 mx-auto">
+                  <h3>Tempus</h3>  
+                  <p>Fusce pellentes</p>        
+                </div>
+                <div class="col-3 text-center">
+                 <img src="../src/images/pexels-photo-712513.jpeg" alt="person4" class="d--block w-25 mx-auto">
+                 <h3>Dolore</h3>
+                 <p>Praesent place3</p>               
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
